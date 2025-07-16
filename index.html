@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 scroll-smooth">
+
+  <!-- Navbar -->
+  <header class="bg-gray-900 text-white fixed top-0 left-0 right-0 z-50 shadow">
+    <nav class="container mx-auto p-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">MyPortfolio</h1>
+      <ul class="flex space-x-4">
+        <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-400">About</a></li>
+        <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="pt-28 pb-16 text-center bg-gradient-to-r from-blue-100 via-white to-pink-100">
+    <img src="https://png.pngtree.com/png-vector/20220622/ourmid/pngtree-male-gender-profile-circle-user-png-image_5263297.png" alt="Profile" class="mx-auto w-32 h-32 rounded-full mb-4 shadow-lg">
+    <h2 class="text-3xl font-semibold">Hi, I'm Devansh</h2>
+    <p class="text-xl mt-2">Student Medicaps University Indore</p>
+    <p class="mt-4 italic">"Building dreams, one line of code at a time."</p>
+    <a href="/resume.pdf" download class="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700 transition">Download Resume</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="px-6 py-12 bg-gray-100">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold text-center mb-6">About Me</h2>
+      <p class="mb-4 text-center">I'm a passionate learner focused on creating responsive, user-friendly websites. I love solving problems and constantly learning new technologies.</p>
+      <div class="grid md:grid-cols-2 gap-6 mt-8">
+        <!-- Skills -->
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-2">Skills</h3>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>HTML</li>
+            <li>Tailwind CSS</li>
+            <li>Python</li>
+            <li></li>
+          </ul>
+        </div>
+        <!-- Timeline -->
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-xl font-semibold mb-2">Education & Experience</h3>
+          <ul class="list-disc pl-5 space-y-2">
+            <li> Schooling from Rajeshwar Higher Secondary School, Mhow (2023)</li>
+            <li> B.Tech in Robotics & Automation Medicaps University Indore (2023-2027)</li>
+            <li> Learned HTML/CSS/basics</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="px-6 py-12">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold text-center mb-6">Project</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Project Card -->
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.22tPt9bi1FRyjOYQI8irPQHaD4?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Project 1" class="rounded mb-2">
+          <h3 class="text-lg font-semibold">Portfolio Website</h3>
+          <p class="text-sm">Built with HTML and Tailwind CSS</p>
+          <a href="#" class="text-blue-600 text-sm mt-2 inline-block">View on GitHub</a>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.1RBrEF-S8sccsW6cBDrpEQHaDt?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Project 2" class="rounded mb-2">
+          <h3 class="text-lg font-semibold">Landing Page</h3>
+          <p class="text-sm">VS Code </p>
+          <a href="#" class="text-blue-600 text-sm mt-2 inline-block">View on GitHub</a>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.03KElrT6UEBLUDDS9KtlbgHaEr?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Project 3" class="rounded mb-2">
+          <h3 class="text-lg font-semibold">GitHub</h3>
+          <p class="text-sm">Hosted on GitHub </p>
+          <a href="#" class="text-blue-600 text-sm mt-2 inline-block">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="px-6 py-12 bg-gray-100">
+    <div class="max-w-xl mx-auto">
+      <h2 class="text-2xl font-bold text-center mb-6">Contact Me</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-2 border border-gray-300 rounded"/>
+        <input type="email" placeholder="Your Email" class="w-full p-2 border border-gray-300 rounded"/>
+        <textarea rows="5" placeholder="Your Message" class="w-full p-2 border border-gray-300 rounded"></textarea>
+        <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700 transition">Submit</button>
+      </form>
+      <div class="mt-6 text-center space-x-4">
+        <!-- Optional Social Icons -->
+        <a href="#"><i class="fab fa-github text-2xl"></i></a>
+        <a href="#"><i class="fab fa-linkedin text-2xl"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-4">
+    <p>&copy; 2025 Devansh Bawniya. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
